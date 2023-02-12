@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DM+Sans:wght@400;700&family=Fira+Sans:wght@400;500;800&family=Nunito+Sans:wght@400;700&family=Poppins&display=swap'); 
+
+     body{
+      background-image: linear-gradient(#222,#444);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+     }
+
+     h1{
+      position: absolute;
+      text-transform: uppercase;
+      color: #ff4000;
+      font-size: 40px;
+      font-family: 'Poppins',sans-serif;
+     }
+
+     h1::after{
+      content: attr(Zafar-text);
+      position: absolute;
+      top: 30px;
+      left: 0;
+      transform-origin: bottom;
+      transform: rotateX(180deg);
+      line-height: 1rem;
+      background-image: linear-gradient(0deg,orangered,transparent 95%);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      color: transparent;
+      opacity: 0.9;
+     }
+  </style>
+
+  <title>Zafar</title>
+</head>
+<body>
+  <h1 Zafar-text="Zafar Gulomov">Zafar Gulomov</h1>
+</body>
+</html>
